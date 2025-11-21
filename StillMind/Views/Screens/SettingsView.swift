@@ -66,7 +66,7 @@ struct SettingsView: View {
                             
                             Button(action: {
                                 // Privacy policy action
-                                if let url = URL(string: "https://stillmind.app/privacy") {
+                                if let url = URL(string: "https://www.termsfeed.com/live/26a73093-420b-413f-a8ab-bf70a2bf7a34") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
