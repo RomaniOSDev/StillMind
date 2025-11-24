@@ -24,6 +24,7 @@ class LoadingSplash: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .dark
         setupUI()
         proceedWithFlow()
     }
@@ -69,6 +70,7 @@ class LoadingSplash: UIViewController {
                     }
                     let swiftUIView = ContentView().preferredColorScheme(.dark)
                     let hostingController = UIHostingController(rootView: swiftUIView)
+                    hostingController.overrideUserInterfaceStyle = .dark
                     hostingController.modalPresentationStyle = .fullScreen
                     self.present(hostingController, animated: true)
                 }

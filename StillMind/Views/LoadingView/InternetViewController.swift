@@ -44,6 +44,7 @@ class WebviewVC: UIViewController, WKNavigationDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .dark
         addUI()
         obtainCookies()
         firemanWebviewForTerms.navigationDelegate = self
